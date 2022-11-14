@@ -133,7 +133,7 @@
     </section>
 
     <section class="slide">
-      <img class="cover w" src="pictures/twitter.png" alt="" />
+      <img class="cover w" style="width: 65%" src="pictures/twitter.png" alt="" />
     </section>
 
     <!-- 1 дейли в день -->
@@ -171,6 +171,14 @@
       <h2 class="shout">14 февраля 1918</h2>
     </section>
 
+    <section class="slide clear">
+      <img
+        class="cover h"
+        src="pictures/1584986394_1549998900_oformlenie_pryamougolnoy_kartinki.jpg"
+        alt=""
+      />
+    </section>
+
     <section class="slide">
       <img class="cover w" src="pictures/Soviet_calendar_1930_color.jpg" alt="" />
     </section>
@@ -191,6 +199,17 @@
       />
     </section>
 
+    <section class="slide">
+      <h2>Реализация неидеальна</h2>
+      <ul>
+        <li>неравенство кварталов</li>
+        <li class="next">неравенство полугодий</li>
+        <li class="next">несогласованность номеров дней в месяце с днями недели</li>
+        <li class="next">наступление каждого нового года начинается с другого дня недели</li>
+        <li class="next">он опережает астрономический год (сутки набегают за 3300 лет)</li>
+      </ul>
+    </section>
+
     <section class="slide clear">
       <img class="cover w" src="pictures/0a2a1bcb07a77915017bfae6c3f56bf7c38756d0.png" alt="" />
     </section>
@@ -203,26 +222,30 @@
     </section>
 
     <!-- https://archive.ph/20140927035935/www.sptv.demon.co.uk/calendar/ -->
-    <section class="slide clear">
-      <img class="cover w" src="pictures/544dc38aa0219f1be54d35612c538196a35c830c.gif" alt="" />
-    </section>
-
     <!-- 1985 -->
     <section class="slide clear">
-      <img class="cover w" src="pictures/34bfbbd8cd266298e3cb195e36f66c4a92b9a810.gif" alt="" />
+      <img class="cover h" src="pictures/544dc38aa0219f1be54d35612c538196a35c830c.gif" alt="" />
     </section>
 
     <!-- 1992 -->
     <section class="slide clear">
-      <img class="cover w" src="pictures/3dcabd54ff66e1257806ccda168fc50d8227f3b5.gif" alt="" />
-    </section>
-
-    <section class="slide">
-      <h2 class="shout">Цифровой веб-календарь</h2>
+      <img class="cover h" src="pictures/3dcabd54ff66e1257806ccda168fc50d8227f3b5.gif" alt="" />
     </section>
 
     <section class="slide clear">
-      <img class="cover w" src="pictures/Cal_screenshot.png" alt="" />
+      <img class="cover h" src="pictures/34bfbbd8cd266298e3cb195e36f66c4a92b9a810.gif" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/Cal_screenshot.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/screenshot-mac-high-res.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/Calendar.png" alt="" />
     </section>
 
     <section class="slide">
@@ -250,7 +273,41 @@
     </section>
 
     <section class="slide">
-      <h2 class="shout brand">Пользоваться календарём</h2>
+      <h2 class="shout">Быстро записать</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Повторяющиеся события</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Заполняйте описание</h2>
+    </section>
+    <!-- номер вагона, рейс, резюме, ссылка на мит -->
+
+    <section class="slide">
+      <h2 class="shout">Заполняйте описание</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Необязательные события</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Справочные календари</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout brand">Поделитеcь календарём</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">1996</h2>
+    </section>
+
+    <!-- https://web.archive.org/web/20150906130553/http://www.imc.org/pdi/ -->
+    <section class="slide clear">
+      <img class="cover h" src="pictures/imc-vcal-vcard.png" alt="" />
     </section>
 
     <section class="slide">
@@ -258,11 +315,17 @@
     </section>
 
     <section class="slide">
-      <img class="cover h" src="pictures/ICalendarSpecification.png" alt="" />
+      <h2>.ics</h2>
+      <code>
+        BEGIN:VCALENDAR PRODID:-//Timepad Ltd.//NONSGML Timepad//RU VERSION:2.0 METHOD:PUBLISH
+        BEGIN:VEVENT UID:540172231451 DTSTART:20221119T130000 DTEND:20221119T190000
+        DTSTAMP:20221110T103151 SUMMARY:Frontend Day DESCRIPTION:Не просто митап, а мини-конфа по
+        фронтенду LOCATION:Иннополис, Артспейс, ул. Парковая, 1 END:VEVENT END:VCALENDAR
+      </code>
     </section>
 
-    <section class="slide">
-      <img class="cover h" src="pictures/Calendar.png" alt="" />
+    <section class="slide clear">
+      <img class="cover h" src="pictures/ICalendarSpecification.png" alt="" />
     </section>
 
     <section class="slide">
@@ -294,7 +357,11 @@
     </section>
 
     <section class="slide">
-      <h2 class="shout">Бонус</h2>
+      <h2 class="shout">Алгоритм синхронизации события</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Алгоритм предложить событие</h2>
     </section>
 
     <section class="slide">
@@ -306,14 +373,19 @@
     </section>
 
     <section class="slide">
-      <h2>.ics</h2>
-      <code>
-        BEGIN:VCALENDAR PRODID:-//Timepad Ltd.//NONSGML Timepad//RU VERSION:2.0 METHOD:PUBLISH
-        BEGIN:VEVENT UID:540172231451 DTSTART:20221119T130000 DTEND:20221119T190000
-        DTSTAMP:20221110T103151 SUMMARY:Frontend Day DESCRIPTION:Не просто митап, а мини-конфа по
-        фронтенду LOCATION:Иннополис, Артспейс, ул. Парковая, 1 END:VEVENT END:VCALENDAR
-      </code>
+      <h2 class="shout brand">Пользоваться календарём</h2>
     </section>
+
+    <section class="slide">
+      <h2 class="shout">Проверяйте каждый день</h2>
+    </section>
+    <!-- Утром или вечером. Сделайте это частью вашей рутины. -->
+
+    <section class="slide">
+      <h2 class="shout">Настройте уведомления</h2>
+    </section>
+    <!-- Ошибка Планирования -->
+    <!-- особенно полезно для таких мероприятий, как дни рождения и юбилеи -->
 
     <section class="slide">
       <h2 class="shout brand">Используйте календари</h2>
@@ -321,7 +393,11 @@
 
     <section class="slide">
       <h2>О чём ещё можно поговорить</h2>
-      <p>...</p>
+      <ul>
+        <li>Свой инди-календарь, если всех заблочат</li>
+        <li>Адвент календарь</li>
+        <li>Будущее календарей</li>
+      </ul>
     </section>
 
     <section class="slide">
