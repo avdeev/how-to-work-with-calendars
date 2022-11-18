@@ -363,7 +363,11 @@
     </section>
 
     <section class="slide">
-      <img class="cover h" src="pictures/subscribe_apple.png" alt="" />
+      <h2 class="shout">Есть личные события</h2>
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/google_private_public.png" alt="" />
     </section>
 
     <section class="slide">
@@ -496,6 +500,12 @@
     </section>
 
     <section class="slide">
+      <h2 class="shout">Сохраняйте в календаре</h2>
+    </section>
+
+    <!-- TODO: показать, как добавляется событие с госуслуг ? -->
+
+    <section class="slide">
       <h2 class="shout">Справочные календари</h2>
     </section>
 
@@ -511,7 +521,7 @@
       <img class="cover h" src="pictures/photo_2022-11-18 17.03.16.jpeg" alt="" />
     </section>
 
-    <!-- TODO: пример расписания менендера -->
+    <!-- TODO: пример расписания мененджеров -->
 
     <!--
     <section class="slide clear">
@@ -549,11 +559,85 @@
     </section>
 
     <section class="slide">
+      <h2 class="shout">Занятое и&nbsp;свободное время</h2>
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/google_busy_free.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2>Занятое и&nbsp;свободное время</h2>
+      <h2 class="shout" style="font-size: 3em"><code>TRANSP:OPAQUE</code></h2>
+    </section>
+
+    <section class="slide">
+      <h2>Занятое и&nbsp;свободное время</h2>
+      <h2 class="shout" style="font-size: 3em"><code>TRANSP:TRANSPARENT</code></h2>
+    </section>
+
+    <section class="slide">
       <h2 class="shout">Добавляйте участников</h2>
     </section>
 
     <section class="slide clear">
-      <img class="cover h" src="pictures/guests.png" alt="" />
+      <img class="cover h" src="pictures/guests_2.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/yandex_mail.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/request.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2>Письмо</h2>
+      <pre>
+        <code><mark>Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes</mark></code>
+        <code>--</code>
+        <code><mark>Content-Type: text/html; charset="UTF-8"</mark></code>
+        <code>--</code>
+        <code>Content-Type: text/calendar; charset="UTF-8"; method=REQUEST</code>
+        <code>--</code>
+        <code>Content-Type: application/ics; name="invite.ics"</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>TEXT и HTML</h2>
+      <pre>
+        <code>https://calendar.google.com/calendar/event?action=RESPOND&...</code>
+        <code> </code>
+        <code>https://calendar.google.com/calendar/event?action=VIEW&...</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Письмо</h2>
+      <pre>
+        <code>Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes</code>
+        <code>--</code>
+        <code>Content-Type: text/html; charset="UTF-8"</code>
+        <code>--</code>
+        <code><mark>Content-Type: text/calendar; charset="UTF-8"; method=REQUEST</mark></code>
+        <code>--</code>
+        <code>Content-Type: application/ics; name="invite.ics"</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>iCalendar</h2>
+      <pre>
+        <code>BEGIN:VCALENDAR</code>
+        <code><mark>METHOD:REQUEST</mark></code>
+        <code>BEGIN:VEVENT</code>
+        <code>  UID:4g9htbun58uo73icl4stodlar8@google.com</code>
+        <code>  SUMMARY:Frontend Day</code>
+        <code>END:VEVENT</code>
+        <code>END:VCALENDAR</code>
+      </pre>
     </section>
 
     <!-- https://datatracker.ietf.org/doc/html/rfc2446 -->
@@ -572,14 +656,6 @@
     <section class="slide clear">
       <img class="cover h" src="pictures/iMIP.png" alt="" />
     </section>
-
-    <section class="slide">
-      <h2 class="shout">Демо</h2>
-    </section>
-
-    <!-- TODO: показать письмо  -->
-
-    <!-- TODO: показать, как добавляется событие с госуслуг ? -->
 
     <section class="slide">
       <h2 class="shout brand">Пользоваться календарём</h2>
