@@ -1,159 +1,776 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <title>Как работать с календарями</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
-  <style>
-    .shower {
-      --slide-ratio: calc(16 / 9);
-      --ribbon-size: 40px;
-      --slide-side: 41px;
-    }
-
-    .progress::before {
-      background-color: #ff0000;
-    }
-
-    .slide {
-      padding-top: 51px;
-      background-image: url("pictures/slide-cover.png");
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-position: center;
-    }
-
-    .slide.clear {
-      background-image: none;
-    }
-
-    .slide::after {
-      top: auto;
-      bottom: 10px;
-      left: auto;
-      right: 30px;
-      background: none;
-      color: #000;
-    }
-
-    .slide h2 {
-      color: #000;
-      font-size: 60px;
-    }
-
-    .slide h2.shout {
-      font-size: 120px;
-      transform: translate(-50%, -50%);
-      left: 50%;
-      width: 80%;
-    }
-
-    .slide .brand {
-      color: #ff0000;
-    }
-
-    .slide ol, .slide ul {
-      padding-left: 40px;
-    }
-
-    .slide li {
-      font-size: 28px;
-    }
-
-    .slide pre {
-      font-size: 30px;
-    }
-
-    .cover {
-      z-index: 1;
-    }
-  </style>
-  </style>
-</head>
-<body class="shower list">
-
-  <header class="caption">
-    <h1>Как работать с календарями</h1>
-    <p><a href="https://alexey-avdeev.com/">Алексей Авдеев</a>, <a href="https://mish.design/">Mish.Design</a></p>
-  </header>
-
-  <section class="slide clear" id="cover">
-    <div style="width: 640px; padding-top: 30px; margin-left: -10px;">
-      <h2>Как работать с календарями</h2>
-      <p><a href="https://alexey-avdeev.com/">Алексей Авдеев</a>, <a href="https://mish.design/">Mish.Design</a></p>
-    </div>
+  <head>
+    <title>Как работать с календарями</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css" />
     <style>
-      .shower #cover {
-        --slide-side: 60px;
+      .shower {
+        --slide-ratio: calc(16 / 9);
+        --ribbon-size: 40px;
+        --slide-side: 41px;
       }
-      #cover {
-        background: #fff url("pictures/title-cover.png") no-repeat center center;
-        background-size: contain;
+
+      .progress::before {
+        background-color: #ff0000;
       }
-      #cover h2 {
-        margin: 0;
+
+      .slide {
+        padding-top: 51px;
+        background: url(pictures/bubble.png), url(pictures/slide-cover.png);
+        background-repeat: no-repeat, no-repeat;
+        background-size: 90px, 100%;
+        background-position: 120px calc(100% - 20px), center;
+        background-color: #fff;
+      }
+
+      .slide.clear {
+        background-image: none;
+      }
+
+      .slide::after {
+        top: auto;
+        bottom: 10px;
+        left: auto;
+        right: 30px;
+        background: none;
         color: #000;
-        font-size: 62px;
       }
-      #cover p {
-        margin: 18px 0 0;
+
+      .slide h2 {
         color: #000;
-        font-size: 24px;
+        font-size: 60px;
       }
-      #cover p a {
-        color: #000;
+
+      .slide h2.shout {
+        font-size: 120px;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        width: 80%;
+      }
+
+      .slide .brand {
+        color: #ff0000;
+      }
+
+      .slide ol,
+      .slide ul {
+        padding-left: 40px;
+      }
+
+      .slide li {
+        font-size: 28px;
+      }
+
+      .slide pre {
+        font-size: 21px;
+        padding-left: 41px;
+      }
+
+      .cover {
+        z-index: 1;
       }
     </style>
-  </section>
+  </head>
+  <body class="shower list">
+    <header class="caption">
+      <h1>Как работать с календарями</h1>
+      <p>
+        <a href="https://alexey-avdeev.com/">Алексей Авдеев</a>,
+        <a href="https://mish.design/">Mish.Design</a>
+      </p>
+    </header>
 
-  <section class="slide">
-    <h2>👨‍💻 О себе</h2>
+    <section class="slide clear" id="cover">
+      <div style="padding-top: 98px; margin-left: 357px">
+        <h2>Как работать с календарями</h2>
+        <p>
+          <a href="https://alexey-avdeev.com/">Алексей Авдеев</a>,
+          <a href="https://mish.design/">Mish.Design</a>
+        </p>
+      </div>
+      <style>
+        .shower #cover {
+          --slide-side: 60px;
+        }
+        #cover {
+          background: #000 url("pictures/title_cover.svg") no-repeat center center;
+          background-size: contain;
+        }
+        #cover h2 {
+          margin: 0;
+          color: #fff;
+          font-size: 82px;
+        }
+        #cover p {
+          margin: 73px 0 0;
+          color: #fff;
+          font-size: 24px;
+        }
+        #cover p a {
+          color: #fff;
+        }
+      </style>
+    </section>
 
-    <ol>
-      <li>👨 Алексей Авдеев (<a href="https://twitter.com/avdeev_alexey">https://twitter.com/avdeev_alexey</a>)</li>
-      <li class="next">👔 CTO, руковожу разработкой</li>
-      <li class="next">🏙️ Из Нижнего Новгорода, работаю в Москве</li>
-      <li class="next">🌐 <a href="https://mish.design/">Mish.Design</a></li>
-      <li class="next">👴 Программирую с 2002 года</li>
-    </ol>
-  </section>
+    <section class="slide">
+      <h2>👨‍💻 О себе</h2>
 
-	<section class="slide">
-    <h2 class="shout">Навык (Skill)</h2>
-  </section>
+      <ol>
+        <li>
+          👨 Алексей Авдеев (<a href="https://twitter.com/avdeev_alexey"
+            >https://twitter.com/avdeev_alexey</a
+          >)
+        </li>
+        <li class="next">👔 Senior Frontend, технический директор</li>
+        <li class="next">🏙️ Из Нижнего Новгорода, работаю в Москве</li>
+        <li class="next">🌐 Продуктовая лаборатория <a href="https://mish.design/">Mish</a></li>
+        <li class="next">👴 Программирую с 2002 года</li>
+      </ol>
+    </section>
 
-	<section class="slide">
-    <h2 class="shout brand">Используйте календари</h2>
-  </section>
+    <section class="slide">
+      <img class="cover w" src="pictures/jsonapi_youtube.jpg" alt="" />
+    </section>
 
-  <section class="slide">
-    <h2>О чём ещё можно поговорить</h2>
-    <p>...</p>
-  </section>
+    <section class="slide">
+      <img class="cover w" src="pictures/docker_youtube.jpg" alt="" />
+    </section>
 
-  <section class="slide">
-    <h2>👏 Спасибо!</h2>
+    <section class="slide">
+      <img class="cover w" src="pictures/maxresdefault.jpg" alt="" />
+    </section>
 
-    <ul>
-      <li>👨 Алексей Авдеев</li>
-      <li>🌐 <a href="https://github.com/avdeev">github.com/avdeev</a></li>
-      <li>🌐 <a href="https://twitter.com/avdeev_alexey">twitter.com/avdeev_alexey</a></li>
-      <li>🌐 <a href="https://alexey-avdeev.com/soft-skills-and-hard-skills/">alexey-avdeev.com/soft-skills-and-hard-skills</a></li>
-      <li>🌐 <a href="https://mish.design/">Mish.Design</a></li>
-    </ul>
+    <section class="slide">
+      <h2 class="shout">Система продуктивности</h2>
+    </section>
 
-    <img src="pictures/iam.jpeg" alt="я" style="height: 230px; position: absolute; right: 15px; top: 141px;">
-  </section>
+    <section class="slide">
+      <img class="cover w" src="pictures/mihail-shufutinskij.jpg" alt="" />
+    </section>
 
-  <footer class="badge">
-    <a href="https://github.com/shower/shower">Fork me on GitHub</a>
-  </footer>
+    <section class="slide">
+      <img class="cover w" style="width: 65%" src="pictures/twitter.png" alt="" />
+    </section>
 
-  <div class="progress"></div>
+    <section class="slide">
+      <h2 class="shout">Мозг плохо хранит информацию</h2>
+    </section>
 
-  <script src="shower/shower.js"></script>
-  <!-- Copyright © 2021 Yours Truly, Famous Inc. -->
+    <section class="slide">
+      <h2 class="shout brand">История</h2>
+    </section>
 
-</body>
+    <section class="slide">
+      <h2 class="shout">~ 5 тыс. лет до н. э.</h2>
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/Calendario_egizio.jpg" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/Maya_Calendar_by_Matthew_Bisanz.jpeg" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/Russian_Moon_calendar,_17th_century.jpg" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">14 февраля 1918</h2>
+    </section>
+
+    <section class="slide clear">
+      <img
+        class="cover h"
+        src="pictures/1584986394_1549998900_oformlenie_pryamougolnoy_kartinki.jpg"
+        alt=""
+      />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/Soviet_calendar_1931_pocket_2.jpg" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/Soviet_calendar_1930_color.jpg" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover w" src="pictures/World_calendars_map.svg" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/alternatives.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Реализация неидеальна</h2>
+    </section>
+
+    <section class="slide clear">
+      <img
+        class="cover w"
+        src="pictures/31_или_30_дней_в_месяце._Счёт_по_костяшкам_рук.png"
+        alt=""
+      />
+    </section>
+
+    <section class="slide">
+      <h2>Високосный код</h2>
+      <ul>
+        <li class="next">каждый 4-й</li>
+        <li class="next">но не каждый 100-й</li>
+        <li class="next">но каждый 400-й</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Реализация неидеальна</h2>
+      <ul>
+        <li>неравенство кварталов</li>
+        <li class="next">неравенство полугодий</li>
+        <li class="next">несогласованность номеров дней в месяце с днями недели</li>
+        <li class="next">наступление каждого нового года начинается с другого дня недели</li>
+        <li class="next">он опережает астрономический год (сутки набегают за 3300 лет)</li>
+      </ul>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/whencanireusethiscalendar.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2>Какой сейчас год?</h2>
+      <div
+        style="font-size: 2.2em; text-align: center; line-height: 1.2em; margin-top: 130px"
+        class="next"
+      >
+        <b>2565</b> год<br />по буддийскому календарю
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>Сколько дней в году?</h2>
+      <div
+        style="font-size: 2.2em; text-align: center; line-height: 1.2em; margin-top: 130px"
+        class="next"
+      >
+        <b>354 (355)</b> дней<br />по исламскому календарю
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>Сколько дней в неделе?</h2>
+      <div
+        style="font-size: 2.2em; text-align: center; line-height: 1.2em; margin-top: 130px"
+        class="next"
+      >
+        <b>7</b>
+      </div>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover w" src="pictures/0a2a1bcb07a77915017bfae6c3f56bf7c38756d0.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Календари недоделаны</h2>
+    </section>
+
+    <!-- TODO: https://www.producthunt.com/stories/7-best-calendar-apps-of-2022 -->
+    <section class="slide">
+      <h2 class="shout brand">Цифровой календарь</h2>
+    </section>
+
+    <!-- https://archive.ph/20140927035935/www.sptv.demon.co.uk/calendar/ -->
+    <!-- 1985 -->
+    <section class="slide clear">
+      <img class="cover h" src="pictures/544dc38aa0219f1be54d35612c538196a35c830c.gif" alt="" />
+    </section>
+
+    <!-- 1992 -->
+    <section class="slide clear">
+      <img class="cover h" src="pictures/3dcabd54ff66e1257806ccda168fc50d8227f3b5.gif" alt="" />
+    </section>
+
+    <!-- 2001 -->
+    <section class="slide clear">
+      <img class="cover h" src="pictures/34bfbbd8cd266298e3cb195e36f66c4a92b9a810.gif" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/Cal_screenshot.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/screenshot-mac-high-res.png" alt="" />
+    </section>
+
+    <!-- TODO мобильный вид -->
+
+    <section class="slide clear">
+      <img class="cover w" src="pictures/mobile_view.png" alt="" />
+    </section>
+
+    <!-- TODO идеи дизайна календарей будущего -->
+
+    <section class="slide">
+      <h2 class="shout brand">Выбрать календарь</h2>
+    </section>
+
+    <section class="slide">
+      <div style="font-size: 3em; text-align: center; line-height: 1.5em; margin-top: 50px">
+        <b>Бумажный</b><br />vs<br /><b>Электронный</b>
+      </div>
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/outlook.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/mail.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/yandex.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/Calendar.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/google.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Поделитеcь календарём</h2>
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/share_google.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/share_icloud-calendar.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/share_yandex.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/subscribe_google.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Есть личные события</h2>
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/google_private_public.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">iCalendar</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">1996</h2>
+    </section>
+
+    <!-- https://web.archive.org/web/20160321023312/https://www.imc.org/pdi/vcal-10.txt -->
+    <section class="slide">
+      <img class="cover h" src="pictures/vCalendar.png" alt="" />
+    </section>
+
+    <!-- https://web.archive.org/web/20150906130553/http://www.imc.org/pdi/ -->
+    <section class="slide clear">
+      <img class="cover h" src="pictures/imc-vcal-vcard.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/iCalendar_1998.png" alt="" />
+    </section>
+
+    <!-- TODO: скучно, убрать или разбавить -->
+    <section class="slide clear">
+      <img class="cover h" src="pictures/iCalendar_2009.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/iCalendar_2016.png" alt="" />
+    </section>
+
+    <!-- менять в зависимости от мероприятия -->
+    <section class="slide">
+      <h2>iCalendar</h2>
+      <pre>
+        <code>BEGIN:<mark>VCALENDAR</mark></code>
+        <code>PRODID:-//Timepad Ltd.//NONSGML Timepad//RU</code>
+        <code>VERSION:2.0</code>
+        <code>METHOD:PUBLISH</code>
+        <code>BEGIN:<mark>VEVENT</mark></code>
+        <code>...</code>
+        <code>END:<mark>VEVENT</mark></code>
+        <code>END:<mark>VCALENDAR</mark></code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>iCalendar</h2>
+      <pre>
+        <code>UID:540172231451</code>
+        <code>DTSTART:20221119T130000</code>
+        <code>DTEND:20221119T190000</code>
+        <code>DTSTAMP:20221110T103151</code>
+        <code>SUMMARY:Frontend Day</code>
+        <code>DESCRIPTION:Не просто митап, а мини-конфа по фронтенду</code>
+        <code>LOCATION:Иннополис, Артспейс, ул. Парковая, 1</code>
+      </pre>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/ICalendarSpecification.png" alt="" />
+    </section>
+
+    <!-- https://datatracker.ietf.org/doc/html/rfc6321 -->
+    <section class="slide">
+      <img class="cover h" src="pictures/xCal.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2>xCal</h2>
+      <pre>
+        <code>&lt;?xml version="1.0" encoding="utf-8"?&gt;</code>
+        <code>&lt;icalendar xmlns="urn:ietf:params:xml:ns:icalendar-2.0"&gt;</code>
+        <code>  &lt;vcalendar&gt;</code>
+        <code>    &lt;properties&gt;...&lt;/properties&gt;</code>
+        <code>    &lt;components&gt;...&lt;/components&gt;</code>
+        <code>  &lt;/vcalendar&gt;</code>
+        <code>&lt;/icalendar&gt;</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/jcal.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2>jCal</h2>
+      <pre>
+        <code>["vcalendar",</code>
+        <code>  [["version", {}, "text", "2.0"]],</code>
+        <code>  [</code>
+        <code>    ["vevent", [</code>
+        <code>      ["uid", {}, "text", "4088E990AD89CB3DBB484909"]</code>
+        <code>    ]</code>
+        <code>]]]</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout brand">Добавлять события</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Повторяющиеся события</h2>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/repeat.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Записывайте быстро</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Заполняйте описание</h2>
+    </section>
+    <!-- номер вагона, рейс, резюме, ссылка на мит -->
+
+    <section class="slide">
+      <h2 class="shout">Необязательные события</h2>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/webstd-calendar.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/notices.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/photo_2022-11-18 17.03.16.jpeg" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/photo_2022-11-18 16.55.49.jpeg" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover w" src="pictures/telegram_share.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Сохраняйте в&nbsp;календаре</h2>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/timepad.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2>Поделиться в Google Calendar</h2>
+      <pre>
+        <code>https://calendar.google.com/calendar/u/0/r/eventedit</code>
+        <code>   ?text=Frontend+Day+//Online</code>
+        <code>   &dates=20221119T130000/20221119T190000</code>
+        <code>   &location=</code>
+        <code>   &details=Подробности:+https://innopolis.timepad.ru/event/2239552/</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Справочные календари</h2>
+    </section>
+
+    <!-- TODO: пример расписания мененджеров -->
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/mish_schedule2.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Разрешите бронировать</h2>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/google_booking.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/appointment_scheduling.jpg" alt="" />
+    </section>
+
+    <!-- https://savvycal.com/avdeev/99701bc1?d=30&from=2022-11-15 -->
+    <section class="slide">
+      <img class="cover h" src="pictures/savvycal.png" alt="" />
+    </section>
+
+    <!-- https://calendly.com/alexey-avdeev/30min?month=2022-11&date=2022-11-18 -->
+    <section class="slide">
+      <img class="cover h" src="pictures/calendly.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/zcal.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover w" src="pictures/telegram_message.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Занятое и&nbsp;свободное время</h2>
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/google_busy_free.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2>Занятое и&nbsp;свободное время</h2>
+      <h2 class="shout" style="font-size: 3em"><code>TRANSP:OPAQUE</code></h2>
+    </section>
+
+    <section class="slide">
+      <h2>Занятое и&nbsp;свободное время</h2>
+      <h2 class="shout" style="font-size: 3em"><code>TRANSP:TRANSPARENT</code></h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Добавляйте участников</h2>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/guests_2.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/yandex_mail.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/request.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2>Письмо</h2>
+      <pre>
+        <code><mark>Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes</mark></code>
+        <code>--</code>
+        <code><mark>Content-Type: text/html; charset="UTF-8"</mark></code>
+        <code>--</code>
+        <code>Content-Type: text/calendar; charset="UTF-8"; method=REQUEST</code>
+        <code>--</code>
+        <code>Content-Type: application/ics; name="invite.ics"</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>TEXT и HTML</h2>
+      <pre>
+        <code>https://calendar.google.com/calendar/event?action=RESPOND&...</code>
+        <code> </code>
+        <code>https://calendar.google.com/calendar/event?action=VIEW&...</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Письмо</h2>
+      <pre>
+        <code>Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes</code>
+        <code>--</code>
+        <code>Content-Type: text/html; charset="UTF-8"</code>
+        <code>--</code>
+        <code><mark>Content-Type: text/calendar; charset="UTF-8"; method=REQUEST</mark></code>
+        <code>--</code>
+        <code>Content-Type: application/ics; name="invite.ics"</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>iTIP REQUEST</h2>
+      <pre>
+        <code>BEGIN:VCALENDAR</code>
+        <code><mark>METHOD:REQUEST</mark></code>
+        <code>BEGIN:VEVENT</code>
+        <code>  UID:4g9htbun58uo73icl4stodlar8@google.com</code>
+        <code>  SUMMARY:Frontend Day</code>
+        <code>END:VEVENT</code>
+        <code>END:VCALENDAR</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>iTIP REPLY</h2>
+      <pre>
+        <code>BEGIN:VCALENDAR</code>
+        <code><mark>METHOD:REPLY</mark></code>
+        <code>BEGIN:VEVENT</code>
+        <code>  ATTENDEE;<mark>PARTSTAT=ACCEPTED</mark>;CN=aad.jerry@gmail.com;</code>
+        <code>  UID:4g9htbun58uo73icl4stodlar8@google.com</code>
+        <code>  SUMMARY:Frontend Day</code>
+        <code>END:VEVENT</code>
+        <code>END:VCALENDAR</code>
+      </pre>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/accepted_in_google.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2>iTIP CANCEL</h2>
+      <pre>
+        <code>BEGIN:VCALENDAR</code>
+        <code><mark>METHOD:CANCEL</mark></code>
+        <code>BEGIN:VEVENT</code>
+        <code>  UID:4g9htbun58uo73icl4stodlar8@google.com</code>
+        <code>  SUMMARY:Frontend Day</code>
+        <code>END:VEVENT</code>
+        <code>END:VCALENDAR</code>
+      </pre>
+    </section>
+
+    <!-- https://datatracker.ietf.org/doc/html/rfc2446 -->
+    <section class="slide clear">
+      <img class="cover h" src="pictures/iTIP_first.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/iMIP_first.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/iTIP.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/iMIP.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout brand">Пользоваться календарём</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Проверяйте каждый день</h2>
+    </section>
+    <!-- Утром или вечером. Сделайте это частью вашей рутины. -->
+
+    <section class="slide">
+      <h2 class="shout">Настройте уведомления</h2>
+    </section>
+    <!-- Ошибка Планирования -->
+    <!-- особенно полезно для таких мероприятий, как дни рождения и юбилеи -->
+
+    <section class="slide">
+      <h2 class="shout brand">Не пытайтесь запомнить</h2>
+    </section>
+
+    <section class="slide">
+      <h2>О чём ещё можно поговорить</h2>
+      <ul>
+        <li>Безопасность</li>
+        <li class="next">CalDAV</li>
+        <li class="next">Микроформаты (hCalendar)</li>
+        <li class="next">Свой инди-календарь</li>
+        <li class="next">Календарь для no-code</li>
+        <li class="next">Будущее календарей</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>👏 Спасибо!</h2>
+
+      <ul>
+        <li>👨 Алексей Авдеев</li>
+        <li>🌐 <a href="https://github.com/avdeev">github.com/avdeev</a></li>
+        <li>
+          🌐
+          <a href="https://twitter.com/avdeev_alexey">twitter.com/avdeev_alexey</a>
+        </li>
+        <li>
+          🌐
+          <a href="https://alexey-avdeev.com/how-to-work-with-calendars/"
+            >alexey-avdeev.com/how-to-work-with-calendars</a
+          >
+        </li>
+        <li>🌐 Продуктовая лаборатория <a href="https://mish.design/">Mish</a></li>
+      </ul>
+
+      <img
+        src="pictures/iam.jpeg"
+        alt="я"
+        style="height: 230px; position: absolute; right: 60px; top: 60px"
+      />
+    </section>
+
+    <footer class="badge">
+      <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="shower/shower.js"></script>
+    <!-- Copyright © 2021 Yours Truly, Famous Inc. -->
+  </body>
 </html>
