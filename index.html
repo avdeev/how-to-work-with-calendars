@@ -18,10 +18,11 @@
 
       .slide {
         padding-top: 51px;
-        background-image: url("pictures/slide-cover.png");
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: center;
+        background: url(pictures/bubble.png), url(pictures/slide-cover.png);
+        background-repeat: no-repeat, no-repeat;
+        background-size: 90px, 100%;
+        background-position: 120px calc(100% - 20px), center;
+        background-color: #fff;
       }
 
       .slide.clear {
@@ -405,14 +406,14 @@
     <section class="slide">
       <h2>iCalendar</h2>
       <pre>
-        <code>BEGIN:VCALENDAR</code>
+        <code>BEGIN:<mark>VCALENDAR</mark></code>
         <code>PRODID:-//Timepad Ltd.//NONSGML Timepad//RU</code>
         <code>VERSION:2.0</code>
         <code>METHOD:PUBLISH</code>
-        <code>BEGIN:VEVENT</code>
+        <code>BEGIN:<mark>VEVENT</mark></code>
         <code>...</code>
-        <code>END:VEVENT</code>
-        <code>END:VCALENDAR</code>
+        <code>END:<mark>VEVENT</mark></code>
+        <code>END:<mark>VCALENDAR</mark></code>
       </pre>
     </section>
 
@@ -500,13 +501,11 @@
     </section>
 
     <section class="slide">
-      <h2 class="shout">Сохраняйте в календаре</h2>
+      <h2 class="shout">Сохраняйте в&nbsp;календаре</h2>
     </section>
 
-    <!-- TODO: показать, как добавляется событие с госуслуг ? -->
-
-    <section class="slide">
-      <h2 class="shout">Справочные календари</h2>
+    <section class="slide clear">
+      <img class="cover h" src="pictures/timepad.png" alt="" />
     </section>
 
     <section class="slide">
@@ -521,12 +520,26 @@
       <img class="cover h" src="pictures/photo_2022-11-18 17.03.16.jpeg" alt="" />
     </section>
 
+    <section class="slide">
+      <h2>Поделиться в Google Calendar</h2>
+      <pre>
+        <code>https://calendar.google.com/calendar/u/0/r/eventedit</code>
+        <code>   ?text=Frontend+Day+//Online</code>
+        <code>   &dates=20221119T130000/20221119T190000</code>
+        <code>   &location=</code>
+        <code>   &details=Подробности:+https://innopolis.timepad.ru/event/2239552/</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Справочные календари</h2>
+    </section>
+
     <!-- TODO: пример расписания мененджеров -->
 
-    <!--
     <section class="slide clear">
-      <img class="cover h" src="pictures/mish_schedules.png" alt="" />
-    </section> -->
+      <img class="cover h" src="pictures/mish_schedule2.png" alt="" />
+    </section>
 
     <section class="slide">
       <h2 class="shout">Разрешите бронировать</h2>
@@ -673,7 +686,7 @@
     <!-- особенно полезно для таких мероприятий, как дни рождения и юбилеи -->
 
     <section class="slide">
-      <h2 class="shout brand">Пользуйтесь календарями</h2>
+      <h2 class="shout brand">Не пытайтесь запомнить</h2>
     </section>
 
     <section class="slide">
