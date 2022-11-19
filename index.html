@@ -311,6 +311,10 @@
 
     <!-- TODO мобильный вид -->
 
+    <section class="slide clear">
+      <img class="cover w" src="pictures/mobile_view.png" alt="" />
+    </section>
+
     <!-- TODO идеи дизайна календарей будущего -->
 
     <section class="slide">
@@ -469,8 +473,6 @@
       </pre>
     </section>
 
-    <!-- TODO: добавить событие из .ics-файла / по ссылке -->
-
     <section class="slide">
       <h2 class="shout brand">Добавлять события</h2>
     </section>
@@ -497,7 +499,23 @@
     </section>
 
     <section class="slide clear">
+      <img class="cover h" src="pictures/webstd-calendar.png" alt="" />
+    </section>
+
+    <section class="slide clear">
       <img class="cover h" src="pictures/notices.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/photo_2022-11-18 17.03.16.jpeg" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/photo_2022-11-18 16.55.49.jpeg" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover w" src="pictures/telegram_share.png" alt="" />
     </section>
 
     <section class="slide">
@@ -506,18 +524,6 @@
 
     <section class="slide clear">
       <img class="cover h" src="pictures/timepad.png" alt="" />
-    </section>
-
-    <section class="slide">
-      <img class="cover w" src="pictures/telegram_share.png" alt="" />
-    </section>
-
-    <section class="slide">
-      <img class="cover h" src="pictures/photo_2022-11-18 16.55.49.jpeg" alt="" />
-    </section>
-
-    <section class="slide">
-      <img class="cover h" src="pictures/photo_2022-11-18 17.03.16.jpeg" alt="" />
     </section>
 
     <section class="slide">
@@ -641,10 +647,41 @@
     </section>
 
     <section class="slide">
-      <h2>iCalendar</h2>
+      <h2>iTIP REQUEST</h2>
       <pre>
         <code>BEGIN:VCALENDAR</code>
         <code><mark>METHOD:REQUEST</mark></code>
+        <code>BEGIN:VEVENT</code>
+        <code>  UID:4g9htbun58uo73icl4stodlar8@google.com</code>
+        <code>  SUMMARY:Frontend Day</code>
+        <code>END:VEVENT</code>
+        <code>END:VCALENDAR</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>iTIP REPLY</h2>
+      <pre>
+        <code>BEGIN:VCALENDAR</code>
+        <code><mark>METHOD:REPLY</mark></code>
+        <code>BEGIN:VEVENT</code>
+        <code>  ATTENDEE;<mark>PARTSTAT=ACCEPTED</mark>;CN=aad.jerry@gmail.com;</code>
+        <code>  UID:4g9htbun58uo73icl4stodlar8@google.com</code>
+        <code>  SUMMARY:Frontend Day</code>
+        <code>END:VEVENT</code>
+        <code>END:VCALENDAR</code>
+      </pre>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/accepted_in_google.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2>iTIP CANCEL</h2>
+      <pre>
+        <code>BEGIN:VCALENDAR</code>
+        <code><mark>METHOD:CANCEL</mark></code>
         <code>BEGIN:VEVENT</code>
         <code>  UID:4g9htbun58uo73icl4stodlar8@google.com</code>
         <code>  SUMMARY:Frontend Day</code>
